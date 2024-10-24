@@ -29,8 +29,11 @@ OPTIONS
         
         - `full-outer`: Perform a full outer join, returning all unique lines from both files.
 
-    --unique
+    -u, --unique
         Remove duplicate lines from both input files before comparison, preserving the order of appearance.
+    
+    --no-case-sensitive
+        Perform a case-insensitive comparison of lines between the two files. When this option is specified, the comparison will treat lines as equal regardless of letter casing. By default, comparisons are case-sensitive.
 
     --left-column <delimiter> <column number>
         Select a specific column from the left file. The line will be split using <delimiter>, and <column number> specifies which column to select (1-based index).

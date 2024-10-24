@@ -132,3 +132,15 @@ def get_right_column_param(args):
         column_number = args[i+2]
         
     return delimiter, column_number
+
+def get_no_case_sensitive_param(args):
+    case_sensitive = True
+    
+    try:
+        i = args.index('--no-case-sensitive')
+    except:
+        pass
+    else:
+        case_sensitive = False
+        
+    return case_sensitive
