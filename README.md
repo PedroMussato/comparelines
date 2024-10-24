@@ -1,3 +1,23 @@
+# HOW TO INSTALL
+Install pyinstaller
+```
+pip install pyinstaller
+```
+
+compile the command
+```
+pyinstaller --onefile comparelines.py
+```
+
+copy the command to a folther on PATH
+```
+sudo cp dist/comparelines /usr/local/bin/
+```
+
+Now it's working!
+
+# help page
+
 ```
 NAME
     compareline - Compare lines between two files
